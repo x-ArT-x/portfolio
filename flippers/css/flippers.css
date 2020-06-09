@@ -59,7 +59,6 @@ padding: 0px;
     display: flex;
  }
 .opisanie1 {
-background-color: blue;
  width: 60%;
  height:100%;
  padding: 0px;
@@ -67,16 +66,99 @@ background-color: blue;
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ 
 }
 h2 {
 	margin: 0px;
 }
 .opisanie1 p {
-	font-size: 15px;
+	font-size: 10px;
 	white-space: nowrap;
 }
 .opisanie2 {
   width: 50%;
  height:100%;
+ display: flex;
+ flex-direction: column;
+ 
 
+}
+.textopisanie {
+   width: 80%;
+   height: 100%;
+
+}
+.forms {
+	display: flex;
+	flex-direction: column;
+	height: 63%;
+	justify-content: space-between;
+	margin-top: 4%;
+	margin-left: 13%;
+	margin-right: 21%;
+}
+.forms input {
+	height: 20px;
+	border-radius: 3px;
+	border:2px solid black;
+}
+.forms select {
+	height: 30%;
+	border-radius: 3px;
+	border:1px solid black;
+}
+.itogo {
+	width: 46%;
+	height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 12%;
+}
+.itogo button {
+	border-radius: 4px;
+	background-color: orange;
+	border:none;
+	height: 50%
+}
+.block1 p {
+	transform:rotate(90deg);
+}
+img {
+	margin-top: 7vh; 
+	height: 21vh;
+	width: 90%;
+	margin-left: 5%;
+}
+.cont2 {
+	height: 11vh;
+	width: 100%;
+	margin-top: 2vh;
+	display: flex;
+	justify-content: space-around;
+}
+.textic {
+	height: 100%;
+	width: 50%;
+	box-sizing: border-box;
+}
+.textic h2 {
+	margin-top: 1%;
+	margin-left: 4%;
+    font-size: 22px; 
+}
+.textic p {
+    margin-top: 1%;
+    margin-left: 4%;
+    font-size: 11px;
+    white-space: nowrap; 
+}
+.dveknopki {
+		height: 100%;
+	background-color: green;
+	width: 35%;
+}
+.dveknopki button {
+	margin-top: 1%;
 }
