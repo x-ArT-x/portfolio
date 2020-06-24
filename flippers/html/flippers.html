@@ -11,6 +11,15 @@
  	</div>
  	<div class="block2">
  		<div class="cont0">
+ 		 <div class="cont01" id="cont01" onclick="slider()">
+ 			<h1>Электро-жалюзи</h1>
+ 			<p>С помощью одного пульта можно управлять жалюзи
+            быстро и легко, не вставая с кресла.Возможность
+            контролировать освещённость помещения всего одним нажатием кнопки. Такие жалюзи особенно
+            хороши для труднодоступных окон. 
+ 			</p>
+ 			<button class="button01" onclick="slider2()">Опустить</button>
+ 		 </div>
  		</div>
  	    <div class="cont1">
  	    	<div class="opisanie1">
@@ -33,12 +42,13 @@
         	      <option> Уфа </option>
         	      <option> Вологда </option>
                 </select>
- 	    	    <input type="text" name="width" placeholder="введите ширину в метрах...">
- 	    	    <input type="text" name="height" placeholder="введите высоту в метрах...">
+ 	    	    <input type="text" name="width" placeholder="введите ширину в метрах..." id="input1">
+ 	    	    <input type="text" name="height" placeholder="введите высоту в метрах..." id="input2">
  	    	    </div>
  	    	    <div class="itogo">
- 	    	    	<button class="activeButton">Посчитать</button>
-                     <span>Итого:</span>
+ 	    	    	<input type="submit" value="Посчитать" class="activeButton" onclick="MathCalc()">
+                     <span>Итого:</span><span id="resultat"></span>
+
  	    	    </div>
  	    	</div>
  	    </div>
@@ -63,19 +73,18 @@
  	    <div class="cont3">
  	    	<div class="cont31">
  	    		<div class="vert">
- 	    		<h2>Вертикальные</h2>
- 	    		<p>На сегодняшний день разнообразие материалов,<br>
-                 цветов и фактур позволяет уже не<br>
-                 ассоциировать вертикальные жалюзи с офисом. <br>
-                 Они будут идеально смотреться в интерьерах<br>
-                 любого назначения.Рекомендуется крепление на <br>
-                 проём и в проём окна.
-                 <br>
-                 <br>
-                 Самые интересные варианты вертикальных <br>
-                 жалюзи.Преображают жилое и офисное <br>
-                 пространство , выполняя свою солнцезащитную <br>
-                 функцию..Рекомендуется крепление на проём и <br> в проём окна.
+ 	    		<h1>Вертикальные</h1>
+ 	    		<p>На сегодняшний день разнообразие материалов,
+                 цветов и фактур позволяет уже не
+                 ассоциировать вертикальные жалюзи с офисом. 
+                 Они будут идеально смотреться в интерьерах
+                 любого назначения.Рекомендуется крепление на 
+                 проём и в проём окна.</p>
+                 <p>
+                 Самые интересные варианты вертикальных 
+                 жалюзи.Преображают жилое и офисное 
+                 пространство , выполняя свою солнцезащитную 
+                 функцию..Рекомендуется крепление на проём и в проём окна.
                  </p>
  	    	    </div>
  	    	</div>
@@ -123,13 +132,14 @@
 
  	 <div class="cont6">
  		<div class="cont61">
- 			<img src="../img/plisse.png">
+ 			<img src="../img/plisse.png" onclick="ChangeImagePlis()" id="plis1">
+ 			<img src="../img/wordplis.png" id="plis2"  class=" DisactivateImage" onclick="ChangeImagePlis2()">
  		</div>
  		<div class="cont62">
  			<p>
- 				Этими шторами можно украсить окно любой <br>
- 				конфигурации.Они подчеркнут и уркасят его <br>
- 				нестандартную форму.Такие ткани могут быть<br>
+ 				Этими шторами можно украсить окно любой 
+ 				конфигурации.Они подчеркнут и уркасят его 
+ 				нестандартную форму.Такие ткани могут быть
  				разной плотности,фактуры и цвета.
  			</p>
  		</div>
@@ -155,15 +165,15 @@
  	 <h1 class="h2">Связаться с нами</h1>
  	 <div class="cont9">
  	 	<div class="cont91">
- 	 		<input type="text" name="email" placeholder="Ваш e-mail..." class="inp1">
- 	 		<input type="text" name="email" placeholder="Введите сообщение..." class="inp2">
+ 	 		<input type="email" name="email" placeholder="Ваш e-mail..." class="inp1">
+ 	 		<textarea placeholder="Введите сообщение..."></textarea>
  	 		<button>Отправить</button>
  	 	</div>
- 	 	 <p>
- 	 	 <ins>+7(915)711-64-22</ins>
+ 	 	 <div class="cont92">
+ 	 	 <a href="tel:+7(915)711-64-22">+7(915)711-64-22</a>
  	 	 <br>
- 	 	 <ins>+7(482)235-35-95</ins>
- 	 	</p>
+ 	 	 <a href="tel:+7(482)235-35-95">+7(482)235-35-95</a>
+ 	 	</div>
  	 </div>
 <!-- <footer>
  	 	<div class="cont10">

@@ -10,3 +10,24 @@ document.getElementById('bamboo').classList.add("DisactivateImage");
 document.getElementById('but2').classList.remove("activeButton");
 document.getElementById('but1').classList.add("activeButton");
 }
+function ChangeImagePlis() {
+document.getElementById('plis2').classList.remove("DisactivateImage");
+document.getElementById('plis1').classList.add("DisactivateImage");
+}
+function ChangeImagePlis2() {
+document.getElementById('plis1').classList.remove("DisactivateImage");
+document.getElementById('plis2').classList.add("DisactivateImage");
+}
+var inp1,inp2,result;
+function MathCalc() {
+	inp1 = document.getElemntById('input1').value;
+	inp2 = document.getElemntById('input2').value;
+	result = inp1*inp2;
+	document.getElemntById('resultat').innerHTML=result;
+}
+function slider() {
+document.getElementById('cont01').classList.add("Active");
+}
+function slider2() {
+document.getElementById('cont01').classList.remove("Active");
+}
