@@ -28,11 +28,31 @@ button {
 }
 img {
 	margin-top: 7vh; 
-	width: 90%;
-	margin-left: 5%;
+	margin-right: 90px;
+	margin-left: 70px;
 }
 h2 {
 	margin: 0px;
+}
+textarea {
+	width: 340px;
+	height: 115px;
+	margin-top: 10px;
+	border:2px solid black;
+	border-radius: 5px;
+	margin-left: 2%;
+	resize: none;
+	outline: none;
+}
+input[type="submit"] {
+	padding: 10px;
+	padding: 10px;
+	height:40px; 
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+    border-radius: 5px;
+    outline: none;
 }
 .activeButton {
 		background-color: #fab811;
@@ -48,11 +68,14 @@ padding: 0px;
 }
 .block1 {
 height: 100%;
-display: flex;
 background-color: grey;
 width: 280px;
 margin: 0px;
 padding: 0px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .block2 {
 	background-color: white;
@@ -135,12 +158,19 @@ padding: 0px;
 }
 
 .block1 p {
-	transform:rotate(90deg);
+	transform:rotate(-90deg);
+	position: absolute;
+	font-size: 110px;
+	color: white;
+	white-space: nowrap;
+	font-family: sans-serif;
+	font-weight: bold;
+	letter-spacing: 60px;
 }
 .cont2 {
 	height: 220px;
-	width: 100%;
 	margin-top: 2vh;
+	margin-left: 25px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -175,7 +205,6 @@ padding: 0px;
 	width: 100%;
 	height: 700px;
 	display: flex;
-	background-color: grey;
 }
 .cont31 {
 	width: 52%;
@@ -191,17 +220,21 @@ padding: 0px;
 	padding: 0;
 }
 .vert {
-	margin-left: 10%;
-	margin-top: 0%;
-	height: 80%;
-	background-color: lightgrey;
-  
+	margin-left: 120px;
+  position: relative;
+  width: 450px;
+  margin-top: 150px;
 }
-.vert h2 {
+.vert h1 {
+		transform:rotate(-90deg);
+		margin: 0px;
+		position: absolute;
+		left: -200px;
+		top: 150px;
+       color: black;
 }
 .vert p {
-	font-size: 11px;
-	line-height: 14px;
+	color: black;
 }
 .cont32 img {
 	margin-top: 0;
@@ -213,8 +246,8 @@ padding: 0px;
 	margin-top: 0;
 	display: flex;
 	height: 10%;
-	margin-left: 15%;
-	width: 68%;
+	margin-left: 24px;
+	width: 78%;
 	justify-content: space-between;
 }
 .cont4 {
@@ -235,7 +268,6 @@ padding: 0px;
 }
 .cont42 {
 	width: 53%;
-	background-color: gray;
 }
 .cont422 {
 	margin-top: 4%;
@@ -243,21 +275,13 @@ padding: 0px;
 	height: 92%;
 	width: 70%;
 	padding-top: 1%;
-	background-color: lightgray;
+	background-color: grey;
 }
-}
-.cont422 p {
-	white-space: nowrap;
 }
 
-.cont422 span {
-font-size: 40px;
-font-weight: bold;
-font-family: sans-serif;
-}
+
 .cont423 {
 	margin-top: 34px;
-	background-color: blue;
 	width: 95%;
 	height: 46px;
 	margin-left: 2%;
@@ -266,34 +290,28 @@ font-family: sans-serif;
 }
 .cont424 {
 	margin-top: 0px;
-	background-color: red;
 	width: 95%;
 	height: 47px;
 	margin-left: 2%;
 }
 .cont6 {
-    width: 100%;
     height: 400px;
     display: flex;
-    background-color: green;
+    align-items: center;
 }
 .cont61 {
- width:36%;
- height: 100%;
+	width: 510px;
+	display: flex;
+	justify-content: flex-end;
 }
 .cont61 img {
-	margin-top: 7%;
-	width: 152px;
-	height: 330px;
-	margin-left: 52%;
+	height: 270px;
+	margin:0;
 }
-.cont62 p {
-	margin-left: 13%;
-	margin-top: 37%;
-	font-size: 19px;
-	line-height: 20px;
-	white-space: nowrap;
-	font-family: sans-serif;
+.cont62 {
+	width: 400px;
+	background-color: grey;
+	margin-left: 50px;
 }
 .DisactivateImage {
 	display: none;
@@ -370,11 +388,17 @@ margin-top: 4%;
 	background-color: #fab811;
 	border:none;
 }
-.cont9 p {
+.cont9 a {
 	font-weight: bold;
-	font-size: 36px;
-	margin-top: 4%;
-    margin-left: 4%;
+	font-size: 42px;
+    text-decoration: underline;
+    color: black;
+    font-style:italic;
+    font-family: sans-serif;
+}
+.cont92 {
+	margin-top: 40px;
+    margin-left: 20px;
 }
 footer {
 	background-color: black;
@@ -400,4 +424,44 @@ footer {
 .div2 {
 	width: 42%;
 	margin-left: 6%;
+}
+.cont01 {
+	background-color: black;
+	width: 553px;
+    height: 380px;
+    margin-left: 37px;
+    position: absolute;
+    top: -330px;
+    border-bottom-left-radius:  10px;
+    border-bottom-right-radius:  10px;
+  }
+.Active {
+	top: 0px;
+}
+.Unactive {
+	top: -330px;
+}
+.cont01 h1 {
+	color: white;
+	margin-top: 80px;
+    font-size: 38px;
+    margin-left: 48px;
+}
+.cont01 p {
+	margin-left: 48px;
+	margin-right: 5px;
+	font-size: 17px;
+	color: white;
+
+}
+.button01 {
+	background-color: #fab811;
+	border:none;
+	margin-left: 50px;
+}
+.cont422 span {
+font-size: 38px;
+font-weight: bold;
+font-family: sans-serif;
+
 }
