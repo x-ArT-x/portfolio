@@ -31,3 +31,15 @@ document.getElementById('cont01').classList.add("Active");
 function slider2() {
 document.getElementById('cont01').classList.remove("Active");
 }
+function ChangeImageVert(){
+document.getElementById('vert2').classList.remove("DisactivateImage");
+document.getElementById('vert1').classList.add("DisactivateImage");
+document.getElementById('vbut1').classList.remove("activeButton");
+document.getElementById('vbut2').classList.add("activeButton");
+}
+function ChangeImageVert2(){
+document.getElementById('vert1').classList.remove("DisactivateImage");
+document.getElementById('vert2').classList.add("DisactivateImage");
+document.getElementById('vbut2').classList.remove("activeButton");
+document.getElementById('vbut1').classList.add("activeButton");
+}
